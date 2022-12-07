@@ -34,19 +34,20 @@ public class Puzzle3 extends Puzzle {
             return 0;
         }
 
-        public static int findBadge(Rucksack sac1, Rucksack sac2, Rucksack sac3) {
-            for (char c : sac1.content.toCharArray()) {
-                if ((sac2.content.indexOf(c) > -1) && (sac3.content.indexOf(c) > -1)) {
-                    return charToPriority(c);
-                }
-            }
-            return 0;
-        }
     }
 
     public Puzzle3() {
         super(3);
         this.rucksacs = new ArrayList<Rucksack>();
+    }
+
+    public static int findBadge(Rucksack sac1, Rucksack sac2, Rucksack sac3) {
+        for (char c : sac1.content.toCharArray()) {
+            if ((sac2.content.indexOf(c) > -1) && (sac3.content.indexOf(c) > -1)) {
+                return charToPriority(c);
+            }
+        }
+        return 0;
     }
 
     @Override
@@ -73,7 +74,7 @@ public class Puzzle3 extends Puzzle {
             Rucksack sac2 = this.rucksacs.get(index + 1);
             Rucksack sac3 = this.rucksacs.get(index + 2);
 
-            score += Rucksack.findBadge(sac1, sac2, sac3);
+            score += Puzzle3.findBadge(sac1, sac2, sac3);
             index += 3;
         }
         return score;

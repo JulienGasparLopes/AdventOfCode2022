@@ -1,10 +1,5 @@
 package main.java.com.pinzen.puzzle6;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import main.java.com.pinzen.Puzzle;
 
 public class Puzzle6 extends Puzzle {
