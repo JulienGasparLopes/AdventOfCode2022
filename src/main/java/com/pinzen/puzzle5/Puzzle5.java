@@ -19,6 +19,7 @@ public class Puzzle5 extends Puzzle {
         this.lines = this.input.subList(10, this.input.size());
     }
 
+    @SuppressWarnings("unchecked")
     private void resetStacks() {
         this.stacks = new LinkedList[9];
 
@@ -41,6 +42,7 @@ public class Puzzle5 extends Puzzle {
         }
     }
 
+    @SuppressWarnings("unused")
     private void printStacks() {
         for (LinkedList<String> stack : this.stacks) {
             System.out.println(stack);
