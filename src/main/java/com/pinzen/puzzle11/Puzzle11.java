@@ -18,8 +18,6 @@ public class Puzzle11 extends Puzzle {
     }
 
     private class Monkey {
-        private int index;
-
         public LinkedList<Item> items;
 
         private double divisibleBy;
@@ -30,7 +28,6 @@ public class Puzzle11 extends Puzzle {
         public double inspectedItemsNumber;
 
         public Monkey(int index) {
-            this.index = index / 7;
             this.inspectedItemsNumber = 0;
             this.items = new LinkedList<Item>();
             // Items list
