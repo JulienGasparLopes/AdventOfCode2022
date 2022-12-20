@@ -10,7 +10,8 @@ package main.java.com.pinzen;
 // import main.java.com.pinzen.puzzle8.Puzzle8;
 // import main.java.com.pinzen.puzzle9.Puzzle9;
 // import main.java.com.pinzen.puzzle10.Puzzle10;
-import main.java.com.pinzen.puzzle11.Puzzle11;
+// import main.java.com.pinzen.puzzle11.Puzzle11;
+import main.java.com.pinzen.puzzle12.Puzzle12;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +25,8 @@ public class Main {
         // Puzzle puzzle = new Puzzle8();
         // Puzzle puzzle = new Puzzle9();
         // Puzzle puzzle = new Puzzle10();
-        Puzzle puzzle = new Puzzle11();
+        // Puzzle puzzle = new Puzzle11();
+        Puzzle puzzle = new Puzzle12();
 
         System.out.println("First part answer: " + puzzle.computeFirstHalfAnswer());
         System.out.println("Second part answer: " + puzzle.computeSecondHalfAnswer());
